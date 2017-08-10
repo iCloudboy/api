@@ -1,0 +1,392 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    padding: 0px 30px;
+    color: #B4B4B4;
+}
+
+.active {
+    color: #ee6ea0;
+}
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    background-color: #333333;
+}
+
+
+
+.left {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.left h1 {
+    font-size: 24px;
+    color:#ffffff;
+    font-weight: 400;
+}
+
+.left input {
+    margin-left: 30px;
+    height: 20px;
+    width: 170px;
+}
+.logo {
+
+}
+.logo img {
+    width: 90px;
+    height: 90px;
+}
+
+.right {
+    margin-right: 90px;
+}
+
+.navlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.navlinks a{
+    color: FFFFFF;
+}
+
+
+/* content styling */
+#contentwrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+    height: auto;
+    width: 100%;
+}
+
+.content{
+    text-align: justify;
+    padding: 50px 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 85%;
+    width: 85%;
+    background-color: #FFFFFF;
+}
+
+.content h1{
+    font-size: 42px;
+    padding-bottom: 20px;
+}
+
+#band-container1{
+    background-image: url('../images/the-kooks.png');
+    height: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#band-container2{
+    background-image: url('../images/bss.png');
+    height: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#band-container3{
+    background-image: url('../images/girlband.png');
+    height: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#band-container4{
+    background-image: url('../images/placeholder.png');
+    height: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.name-container{
+    display: inline-block;
+    padding: 10px;
+    margin-top: 300px;
+    background-color: #FFFFFF;
+    height: 40px;
+}
+
+.link-container {
+    float: right;
+    margin-top: 350px;
+}
+
+.link-container a{
+    font-size: 24px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#band-image-container1 {
+     height: 400px;
+     width: 100%;
+     background-image: url('../images/the-kooks-large.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+#band-image-container2 {
+    height: 400px;
+    width: 100%;
+    background-image: url('../images/bss-large.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#band-image-container3 {
+    height: 400px;
+    width: 100%;
+    background-image: url('../images/girlband-large.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#band-image-container4 {
+    height: 400px;
+    width: 100%;
+    background-image: url('../images/placeholder-large.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.band-title {
+    color: #FFFFFF;
+    font-size: 46px;
+}
+
+#tweetscontainer {
+    height: 50vh;
+    width: calc(35vw - 100px);
+    padding: 50px;
+    overflow: scroll;
+    background-color: #f4f4f4;
+}
+
+
+#tweetscontainer h1{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#tweet-list{
+    width: 100%;
+}
+
+#tweet-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#tweet-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #F4F4F4;
+    height: auto;
+    padding: 20px 0px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-top: -17px;
+}
+
+#tweet-container:first-child{
+    margin-top: 10px;
+}
+
+#tweet-right {
+    margin-left: 20px;
+    width: 300px;
+}
+
+#tweet-left {
+    width: 50px;
+    height: 50px;
+}
+
+#tweet-left img {
+    width: 50px;
+    height: 50px;
+}
+
+#tweet-heading {
+    width: 35vw;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -50px;
+    background-color: #ee6ea0;
+}
+
+#post-tweet-container {
+    height: calc(60vh - 20px);
+    width: calc(65vw - 100px);
+    padding: 20px 50px;
+    overflow: scroll;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+}
+
+#post-tweet-title {
+    color: #FFFFFF;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+#post-tweet-form {
+    margin-top: 20px;
+    width: 100%;
+    height: 30vh;
+    margin-left: 50px;
+}
+
+#tweet-user-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.tweet-username{
+    color: #ee6ea0;
+    font-weight: bold;
+}
+
+.tweet-time {
+    color: #444444;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#tweetinput{
+    width: 80%;
+    height: 80%;
+    font-size: 24px;
+    border: none;
+    padding: 30px;
+}
+
+#tweet-submit {
+    width: 150px;
+    height: 40px;
+    background-color: #ee6ea0;
+    color: #FFFFFF;
+    font-size: 20px;
+    border: none;
+}
+
+#google-wrapper {
+    width: 100%;
+    height: 600px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: row;
+}
+#google-wrapper-left {
+    width: 80vw;
+    height: 100%;
+}
+#google-wrapper-right {
+    width: 20vw;
+    height: auto;
+    background-color: #f4f4f4;
+}
+
+#google-wrapper-right :first-child {
+    padding-top: 0px;
+}
+
+.giglocation{
+    border-bottom: 1px solid black;
+    padding: 20px 0px;
+    text-align: center;
+}
+#giglocationdistance{
+    display: none;
+    border-bottom: 1px solid black;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+#fb-button {
+    margin-left: 20px;
+}
+
+#facebook-wrapper {
+    height: auto;
+    width: 100vw;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#facebook-container {
+    color: #FFFFFF;
+    display: none;
+    width: 50%;
+    align-items: center;
+    flex-direction: column;
+}
+
+#facebook-container h3{
+    margin-top: 30px;
+}
+
+#facebook-heading {
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+#fb-logout {
+    display: none;
+}
+
+#fb-feed {
+    display: none;
+    flex-direction: column;
+    width: 50vw;
+    color: #FFFFFF;
+}
+
+#refresh-tweets {
+    margin-left: 20px;
+    background-color: #FFFFFF;
+    border: none;
+    height: 20px;
+    width: 60px;
+}
+
+.distanceevent {
+    display: none;
+}
